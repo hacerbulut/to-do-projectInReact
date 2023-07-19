@@ -18,7 +18,7 @@ const Header = ({todos, setTodos}) => {
     setTask("")
   }
   return (
-    <div className="text-center text-secondary m-5">
+    <div className="text-center text-info m-5">
       <h1>TODO LİST</h1>
       <InputGroup className="mb-3 w-50 d-flex mx-auto">
         <Form.Control
@@ -29,7 +29,7 @@ const Header = ({todos, setTodos}) => {
           value={task}
         />
         <Button
-          className="input-group-text bg-danger"
+          className="input-group-text bg-primary"
           id="basic-addon2"
           disabled={!task.trim()}
           onClick={addTodo}
